@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Formulaire</title>
+</head>
+<body>
+ <section>
+    <h1>FORMULAIRE</h1>
+   <div class="container">
+    <form action="https://formspree.io/f/mjvjrojd" method="POST" name="formulaire" onsubmit="return validateForm()">
+     <div class="first-group">
+            <label>Nom:</label>
+            <input type="text" name="input" id="nom">
+            <span id="error"></span>
+        </div>
+        <div class="first-group">
+            <label>Adresse:</label>
+            <input type="text" name="input" id="adresse">
+        </div>
+        <div class="first-group">
+            <label>E-mail:</label>
+            <input type="email" name="input" id="mail">
+        </div>
+        <div class="first-group">
+            <label>Mot de passe:</label>
+            <input type="password" name="input" id="pass">
+        </div>
+        <div class="first-group">
+            <label>Telephone:</label>
+            <input type="tel" name="input" id="telephone">
+        </div>
+        <div class="first-group">
+            <label>COISIR VOTRE COURS</label>
+            <select name="cours" id="cours">
+                <option value="PHP">PHP</option>
+                <option value="HTML">HTML</option>
+                <option value="JAVASCRIPT">JAVASCRIPT</option>
+                <option value="CSS">CSS</option>
+                <option value="PHOTOSHOP">PHOTOSHOP</option>
+                <option value="ILLUSTRATOR">ILLUSTRATOR</option>
+                
+            </select>
+        </div>
+        <div class="first-group">
+            <label>Commentaire</label> <br> 
+            <textarea name="Commenter" id="commenter" cols="30" rows="10"></textarea>
+        </div>
+        
+            <button type="submit" >ENVOYER</button>
+             <button type="reset">RESET</button>
+        
+    </form>
+</div>
+</section>
+    <script src="./js/doc.js"></script>
+</body>
+</html>
